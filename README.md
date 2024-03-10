@@ -7,6 +7,7 @@ Welcome to 3rd Shock Scripts! This repository is a treasure trove of essential s
 #### 🌟 Features:
 - Artillery Radar Script
 - Intel Gathering Script
+- Custom Logistics Script
 
 #### 🎉 Quality of Life:
 - Better Stamina (ACE3 & CBA)
