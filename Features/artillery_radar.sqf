@@ -24,17 +24,14 @@ private _message = format ["Artillery Radar Alert<br />Incoming artillery detect
 
 // We alert the leadership of each group per player
 if (!(_unit getVariable "alerted")) then {
-	_unit setVariable ['alerted', true, true];
-	{
-		private _leader = leader _x;
-		_leader createDiaryRecord ["Diary", ["Artillery Radar Alert", _message]];
-
-		"INCOMING!\nARTY DATA SENT TO YOUR BRIEFING!" remoteExec ["hint", allPlayers select {
-			leader group _x == _x
-		}, true];
-	} forEach allPlayers;
+    _unit setVariable ['alerted', true, true];
+    {
+        if ("ItemRadio" in assignedItems _x) then {
+            _x createDiaryRecord ["Diary", ["Artillery Radar Alert", _message]];
+            "INCOMING!\nARTY DATA SENT TO YOUR BRIEFING!" remoteExec ["hint", _x, true];
+        }
+    } forEach allPlayers;
 };
-
 
 private _markerTrace = "EH_fired_Bullet";
 private _cnt = random 50000;
@@ -96,9 +93,10 @@ while { alive _projectile } do {
 	sleep 0.5;
 };
 
+{ deleteMarker _x } forEach [_marker, _markerH, _markerstr];
+
 sleep 10;
+
 _this select 0 setVariable ['alerted', false, true];
-{
-	deleteMarker _x
-} forEach [_marker, _markerH, _markerstr];
+
 
