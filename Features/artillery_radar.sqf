@@ -11,6 +11,10 @@
 	'''
 	this execVM "artillery.sqf"
 	'''
+	OR PLACE THE SCRIPT ONTO CFGFUNCTIONS & LOAD IN THE INIT FIELD AS 
+	```
+	this call functionNameGivenInCfgFunctions;
+	``` 
 */
 params ["_unit"];
 
