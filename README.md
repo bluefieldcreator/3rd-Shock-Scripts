@@ -10,7 +10,10 @@ Welcome to 3rd Shock Scripts! This repository is a treasure trove of essential s
 - Custom Logistics Script
 
 #### 🎉 Quality of Life:
-- Better Stamina (ACE3 & CBA)
+- Better Stamina
+
+### 📦 Dependencies 
+Most of the scripts listed here rely either on **CBA_A3** or **ACE3** due to the use of macros and library-specific functions. Keep in mind this is not a *public* script repository, this is cattered torwards the 3rd Shock Army group which makes use of ACE3 and CBA.
 
 ### 📜 Licensing
 
