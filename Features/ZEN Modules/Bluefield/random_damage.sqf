@@ -2,6 +2,10 @@
   Author: Bluefield
   Description: Randomly damages a vehicle except the engine which is limited to 0.9 to avoid explosions.
   Requires: ZEN (Zeus Enhanced)
+  
+  Usage:
+	1. Place in init.sqf
+	2. Use in Zeus Enhanced (Modules, under Bluefield)
 */
 ["Bluefield", "Random Damage Car", {
 	params ["_position", "_obj"];
