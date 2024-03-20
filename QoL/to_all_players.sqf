@@ -3,6 +3,8 @@
 	MADE BY BOHEMIA INTERACTIVE (WIKI LINK; https://community.bistudio.com/wiki/remoteExec | Example 9)
 
 	Adds the global variable "TO_ALL_PLAYERS" for remote executions.
+	
+	This variable allows for pure-local execution of code on the clients end, excludes headless clients and ensures performance by excluding the server.
 
 	HOW TO USE:
 	1. Place script in init.sqf
@@ -11,6 +13,10 @@
 	```sqf
 		[params] remoteExec ["function", TO_ALL_PLAYERS];
 	``` 
+	```sqf
+	// client or server will always target the 'good machines'
+	["Yay!"] remoteExec ["hint", TO_ALL_PLAYERS];
+	```
 */
 if (isServer) then
 {
