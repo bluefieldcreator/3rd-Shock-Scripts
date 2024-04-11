@@ -29,9 +29,12 @@ Create a file named `description.ext`, make sure you have the option "show file 
 
 > **TIP!**
 > You can find the view settings under the "view" tab in the file explorer.
-> ![file explorer view settings](https://cdn.discordapp.com/attachments/942035235879649301/1228124323382956042/image.png?ex=662ae6e8&is=661871e8&hm=f185eb1e670bb522c43a582ee3cccbd69ac744c18352b5c7994206a37bd4a710&)
 > 
+> ![file explorer view settings](https://cdn.discordapp.com/attachments/942035235879649301/1228124323382956042/image.png?ex=662ae6e8&is=661871e8&hm=f185eb1e670bb522c43a582ee3cccbd69ac744c18352b5c7994206a37bd4a710&)
+
+
 Once your file is created, it should look like this
+
 ![description.ext](https://cdn.discordapp.com/attachments/942035235879649301/1228124545177882645/image.png?ex=662ae71d&is=6618721d&hm=65564d0cac9c0d9477650383c98ce1f1b450c0300ef213e1d25e0f582a9fa5ac&)
 
 ### Step 4.2 - Adding 'cfgMusic'
@@ -106,7 +109,9 @@ In my case, my music class name is `Omnis`
 >  Your music class name is NOT `name = "blah blah"`, its the `class NAME` what you're looking for! 
 
 We can play this music through a trigger or anything similar, here's an example; A player walks into a trigger and "omnis" begins to play.
+
 ![Trigger](https://media.discordapp.net/attachments/942035235879649301/1228127156358483978/image.png?ex=662ae98b&is=6618748b&hm=8a547cb75d5174759f4847874e2ffd525a14353dae933d714f2c30ba5fd48188&=&format=webp&quality=lossless)
+
 And that's it. 
 
 > **TIP**
